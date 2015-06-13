@@ -46,27 +46,31 @@ the cabal installation of Agda. This requires the following steps:
 
 ### Troubleshooting
 
-When trying to install Agda with cabal, I got the following error message:
-"The program cpphs version >=1.18.6 && <1.19 is required"
-So I installed a newer version of cpphs as follows:
+1. **Installation problems** When trying to install Agda with cabal, I got the
+   following error message:
+   
+        "The program cpphs version >=1.18.6 && <1.19 is required"
 
-    cabal install cpphs-1.18.9
+   So I installed a newer version of cpphs as follows:
 
-After Agda was finally installed, I had a terrible time getting unicode fonts to
-appear as expected.  (Personally, I would simply avoid the hassle of getting
-unicode working and just use plain ascii text. However, lots of Agda developers
-use unicode, and we want their source files to appear correctly in Emacs, so
-it's important to get unicode working properly. I found the following solution:
+        cabal install cpphs-1.18.9
 
-1. Install the `ttf-bitstream-vera` font package:
+2. **Unicode problems** After Agda was finally installed, I had a terrible time
+   getting unicode fonts to appear as expected.  (Personally, I would simply
+   avoid the hassle of getting unicode working and just use plain ascii
+   text. However, lots of Agda developers use unicode, and we want their source
+   files to appear correctly in Emacs, so it's important to get unicode working
+   properly. I found the following solution: 
+
+   - Install the `ttf-bitstream-vera` font package:
 
         sudo apt-get install ttf-bitstream-vera
 
-2. Add the following lines to your emacs customization file (e.g. `.emacs`):
+   - Add the following lines to your emacs customization file (e.g. `.emacs`):
 
-        (load-file (let ((coding-system-for-read 'utf-8))
-                        (shell-command-to-string "agda-mode locate")))
-        (set-fontset-font "fontset-default" 'unicode "DejaVu Sans")
+            (load-file (let ((coding-system-for-read 'utf-8))
+                            (shell-command-to-string "agda-mode locate")))
+            (set-fontset-font "fontset-default" 'unicode "DejaVu Sans")
 
    (If you already have the first two of these lines, just add the third!)
    
