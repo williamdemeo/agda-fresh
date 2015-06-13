@@ -49,7 +49,7 @@ the cabal installation of Agda. This requires the following steps:
 1. **Installation problems** When trying to install Agda with cabal, I got the
    following error message:
    
-        "The program cpphs version >=1.18.6 && <1.19 is required"
+        The program cpphs version >=1.18.6 && <1.19 is required
 
    So I installed a newer version of cpphs as follows:
 
@@ -64,7 +64,7 @@ the cabal installation of Agda. This requires the following steps:
 
    - Install the `ttf-bitstream-vera` font package:
 
-        sudo apt-get install ttf-bitstream-vera
+            sudo apt-get install ttf-bitstream-vera
 
    - Add the following lines to your emacs customization file (e.g. `.emacs`):
 
