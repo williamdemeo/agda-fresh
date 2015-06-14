@@ -1,12 +1,20 @@
-## Agda
+## agda-fresh
 
 This repository collects some resources and notes that I found helpful when
 getting started with Agda.
 
+### Courses
+The courses subdirectory contains instructional materials and Agda source code
+from some classes and tutorials on Agda and dependent type theory.
+
 ### Installation
-At first I used `apt-get` to install the package `agda-mode`.  This seemed to
-work fine for a while, until I started using resources from other developers
-(like Ulf Norell's agda-prelude repository).
+I'm using Ubuntu 14.04, so at first I tried the default agda-mode package,
+installed with
+
+    apt-get agda-mode
+
+This was working fine until I started using resources from other developers
+(namely, Ulf Norell's agda-prelude repository).
 
 I found that trying to use the Ubuntu package along with packages from others
 who installed Agda with cabal was generally a disaster.  There's no reason
