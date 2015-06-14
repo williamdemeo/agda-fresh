@@ -80,6 +80,17 @@ the cabal installation of Agda. This requires the following steps:
 
         cabal install cpphs-1.18.9
 
+   This enabled me to install Agda, but then some Agda code from a few years ago
+   wouldn't parse because of the changes to the standard library.  I had to
+   upgrade Agda again, and this resulted in the same error:
+
+        The program cpphs version >=1.18.6 && <1.19 is required
+
+   The following worked:
+
+        cabal install cpphs-1.19
+        cabal install Agda
+
 2. **Unicode problems** After Agda was finally installed, I had a terrible time
    getting unicode fonts to appear as expected.  (Personally, I would simply
    avoid the hassle of getting unicode working and just use plain ascii
