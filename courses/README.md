@@ -12,7 +12,7 @@ following classes involving Agda:
   by Ana Bove and Peter Dybjer.
 
 + [g53cfr](https://github.com/williamdemeo/agda-fresh/tree/master/courses/g53cfr) --
-  [Computer Aided Formal Reasoning]((http://www.cs.nott.ac.uk/~txa/g53cfr/)
+  [Computer Aided Formal Reasoning](http://www.cs.nott.ac.uk/~txa/g53cfr/)
   by [Thorsten Altenkirch](http://www.cs.nott.ac.uk/~txa/)
 
 + [learn-you](https://github.com/williamdemeo/agda-fresh/tree/master/courses/learn-you) --
