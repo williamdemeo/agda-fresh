@@ -12,5 +12,5 @@ If for some reason you want to create a local mirror of the [course webpage][]
 Then load the index.html file into a browser.
 
 
-[course webpage] http://www.cs.nott.ac.uk/~txa/g53cfr/
-[Computer Aided Formal Reasoning] http://www.cs.nott.ac.uk/~txa/g53cfr/
+[course webpage]: http://www.cs.nott.ac.uk/~txa/g53cfr/
+[Computer Aided Formal Reasoning]: http://www.cs.nott.ac.uk/~txa/g53cfr/
