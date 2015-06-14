@@ -3,6 +3,8 @@
 This repository collects some resources and notes that I found helpful when
 getting started with Agda.
 
+[The main GitHub repository for the Agda programming language is github.com/agda/agda.](https://github.com/agda/agda)
+
 ### Courses
 The courses subdirectory contains instructional materials and Agda source code
 from some classes and tutorials on Agda and dependent type theory.
@@ -51,6 +53,21 @@ the cabal installation of Agda. This requires the following steps:
 
    You can add these lines yourself to whatever emacs config file you use for
    such customizations.
+
+3. Clone the Agda standard library, [agda-stdlib](https://github.com/agda/agda-stdlib)
+   to your local drive, then call `cabal install` from inside the
+   `agda-stdlib/ffi` directory of the cloned repository:
+
+        mkdir -p ~/git/AGDA
+        cd ~/git/AGDA
+        git clone git@github.com:agda/agda-stdlib.git
+		cd agda-stdlib/ffi
+		cabal install
+
+4. Add the following line to your custom emacs file:
+
+        '(agda2-include-dirs (quote ("." "/home/williamdemeo/git/AGDA/agda-stdlib/src" "/usr/share/agda-stdlib")))
+
 
 ### Troubleshooting
 
