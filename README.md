@@ -113,31 +113,30 @@ the cabal installation of Agda. This requires the following steps:
 
 ### Summary of Emacs keybindings for Agda
 
--------------------------
+#### Writing definitions interactively
 
--- Writing definitions interactively
+1. **Create a hole**. `?` (type a question mark) and then type `C-c C-l` 
 
--- Add a question mark and then type C-c C-l to create a hole.
+2. **Move to the next hole**. `C-c C-f`
 
--- Type C-c C-f to move into the next hole.
+3. **Get prompted for what goes in the hole**. `C-c C-c`
 
--- Type C-c C-c to be prompted for what goes in the hole.
+4. **Split on the variable in the hole**. `m`
 
--- Type m to split on the variable in the hole.
+5. **Move into the next hole**. `C-c C-f`
 
--- Type C-c C-f to move into the next hole.
+6. **Get type required in current hole**. `C-c C-,`
 
--- Type C-c C-, to get the type required in the current hole.
+7. **Remove hole**. Enter an appropriate object in hole then `C-c C-space`
 
--- Enter an appropriate object in the hole and type C-c C-space to remove the hole.
+**SUMMARY**
 
-{- SUMMARY
-   ? then C-c C-l creates hole
-   C-c C-f moves to next hole
-   C-c C-c prompts for what goes in hole
-   m splits on variable in hole
-   C-c C-, in hole gets type required
-   C-c C-space removes hole
--}
+1. `?` then `C-c C-l` (create hole)
+2. `C-c C-f` (move to next hole)
+3. `C-c C-c` (prompts for what goes in hole)
+4. `m` (split on variable in hole)
+5. `C-c C-,` (in hole; get type required)
+6. `C-c C-space` (remove hole)
+
 
 
